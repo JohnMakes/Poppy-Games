@@ -28,7 +28,7 @@ h1 {
     height: 4em;
     letter-spacing: -8px;
     text-transform: uppercase;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: fadeIn;
@@ -40,6 +40,7 @@ h1 span {
     text-align: center;
 }
 h1 strong {
+    display: inline-block;
     animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
@@ -49,25 +50,33 @@ h1 strong {
 Animations
 ***/
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    color: #fff;
-    font-size: 3em;
-  }
+    0% {
+        color: #fff;
+        font-size: 3em;
+    }
+    60% {
+        color: #fff;
+    }
 
-  100% {
-    opacity: 1;
-    color: #000;
-    font-size: 4em;
-  }
+    100% {
+        color: #000;
+        font-size: 4em;
+    }
 }
 @keyframes pop {
-  0% {
-    color: #ccc;
-    font-size: 1.5em;
-  }
-
-  100% {
-    color: #000;
-    font-size: 1em;
-  }
+    0% {
+        color: #fff;
+        font-size: 1.5em;
+        transform: rotateZ(50deg);
+    }
+    15% {
+        color: 000;
+        font-size: 2em;
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        color: #000;
+        font-size: 1em;
+    }
