@@ -20,18 +20,22 @@ Fonts
 Base Styles
 ***/
 body{
+    padding-top: 20px;
     font-family: 'helsinkiregular';
 }
+div {position: relative;}
 h1 {
     display: table;
     width: 100%;
     height: 4em;
     letter-spacing: -8px;
+    line-height: 1.8em;
     text-transform: uppercase;
     animation-duration: 0.5s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
-    animation-name: fadeIn;
+    animation-name: colorfadeIn;
+    padding: 120px 0 90px;
 }
 h1 span {
     display: table-cell;
@@ -46,10 +50,32 @@ h1 strong {
     animation-fill-mode: both;
     animation-name: pop;
 }
+img {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: opacityfadeIn;
+}
 /***
 Animations
 ***/
-@keyframes fadeIn {
+@keyframes opacityfadeIn {
+    0% {opacity: 0;}
+    50% {
+       opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes colorfadeIn {
     0% {
         color: #fff;
         font-size: 3em;
