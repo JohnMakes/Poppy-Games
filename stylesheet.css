@@ -23,7 +23,7 @@ body{
     padding-top: 20px;
     font-family: 'helsinkiregular';
 }
-div {position: relative;}
+header {position: relative;}
 h1 {
     display: table;
     width: 100%;
