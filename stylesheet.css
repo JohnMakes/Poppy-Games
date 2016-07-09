@@ -20,10 +20,11 @@ Fonts
 Base Styles
 ***/
 body{
-    padding-top: 20px;
     font-family: 'helsinkiregular';
 }
-header {position: relative;}
+header {
+    margin-top: 20px;
+    position: relative;}
 h1 {
     display: table;
     width: 100%;
