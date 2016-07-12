@@ -32,13 +32,14 @@ header {
 h1 {
     display: table;
     width: 100%;
-    height: 4em;
+    height: 5em;
     letter-spacing: -8px;
     line-height: 1.8em;
     text-transform: uppercase;
     animation-duration: 0.5s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
+    animation-delay: 1s;
     animation-name: colorfadeIn;
     padding: 120px 0 90px;
 }
@@ -50,17 +51,19 @@ h1 span {
 }
 h1 strong {
     display: inline-block;
+    animation-delay: 1s;
     animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: pop;
 }
+main {display: none;}
 /***
 SVG Styles
 ***/
 #Poppy {
     position: absolute;
-    max-width: 350px;
+    max-width: 380px;
     display: block;
     margin: 0 auto;
     left: 0;
@@ -69,12 +72,29 @@ SVG Styles
     animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
-    /*animation-name: opacityfadeIn;*/
 }
+.cls-1 {
+    transform-origin: 50% 50%;}
 #Petal1 {
-    animation-duration: 5s;
-    animation-name: fall;
     transform-origin: 50% 50%;
+    animation-duration: 1s;
+    animation-name: opacityScalefadeIn;
+}
+#Petal2 {
+    animation-duration: 1s;
+    animation-name: opacityScalefadeIn;
+}
+#Petal3 {
+    animation-duration: 1s;
+    animation-name: opacityScalefadeIn;
+}
+#Petal4 {
+    animation-duration: 1s;
+    animation-name: opacityScalefadeIn;
+}
+#Petal5 {
+    animation-duration: 1s;
+    animation-name: opacityScalefadeIn;
 }
 /***
 Card Stytles
@@ -115,19 +135,16 @@ Card Stytles
 /***
 Animations
 ***/
-@keyframes fall {
-    0% { 
+@keyframes opacityScalefadeIn {
+    0% {    
+        -webkit-transform: scale(1.05); /* Safari */
+        transform: scale(1.05);
+        opacity: 0;
     }
-    100% {    
-    }
-}
-@keyframes opacityfadeIn {
-    0% {opacity: 0;}
-    50% {
-       opacity: 0;
-    }
-
+    35% {opacity: 0;}
     100% {
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
         opacity: 1;
     }
 }
