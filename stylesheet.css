@@ -39,7 +39,7 @@ h1 {
     animation-duration: 0.5s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
-    animation-delay: 0.7s;
+    animation-delay: 1s;
     animation-name: colorfadeIn;
     padding: 120px 0 90px;
 }
@@ -51,13 +51,12 @@ h1 span {
 }
 h1 strong {
     display: inline-block;
-    animation-delay: 0.7s;
+    animation-delay: 1s;
     animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: pop;
 }
-main {display: none;}
 /***
 SVG Styles
 ***/
