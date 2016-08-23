@@ -71,7 +71,7 @@ p {
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: opacityfadeIn;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 p.hover {
     transform: scale(1.1);
