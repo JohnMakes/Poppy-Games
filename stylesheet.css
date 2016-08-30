@@ -31,6 +31,7 @@ h1 {
     width: 100%;
     letter-spacing: -8px;
     line-height: 60px;
+    font-size: 4em;
     text-transform: uppercase;
     animation-duration: 0.5s;
     transition-timing-function: ease-in;
@@ -93,7 +94,6 @@ Animations
 @keyframes colorfadeIn {
     0% {
         color: #fff;
-        font-size: 3em;
     }
     60% {
         color: #fff;
@@ -101,7 +101,6 @@ Animations
 
     100% {
         color: #000;
-        font-size: 4em;
     }
 }
 @keyframes pop {
