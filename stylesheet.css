@@ -63,6 +63,20 @@ img {
     animation-fill-mode: both;
     animation-name: opacityfadeIn;
 }
+p {
+    text-align: center;
+    color: #666;
+    font-size: 1.5em;
+    margin-top: 2em;
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: opacityfadeIn;
+    animation-delay: 1s;
+}
+p.hover {
+    transform: scale(1.1);
+}
 /***
 Animations
 ***/
