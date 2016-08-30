@@ -107,17 +107,17 @@ Animations
 @keyframes pop {
     0% {
         color: #fff;
-        font-size: 1.5em;
+        font-size: 150%;
         transform: rotateZ(50deg);
     }
     15% {
         color: 000;
-        font-size: 2em;
+        font-size: 200%;
     }
     50% {
         transform: rotateZ(0deg);
     }
     100% {
         color: #000;
-        font-size: 1em;
+        font-size: 100%;
     }
