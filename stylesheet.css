@@ -38,6 +38,7 @@ header {
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: fadeOut;
+    margin-bottom: -330px;
 }
 h1 {
     display: table;
@@ -99,6 +100,10 @@ Main Styles
 ***/
 main {
     text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: height;
+    animation-delay: 2.5s;
 }
 /***
 Wine Styles
@@ -195,7 +200,9 @@ Card Styles
 Animations
 ***/
 @keyframes opacityfadeIn {
-    0% {opacity: 0;}
+    0% {
+        opacity: 0;
+    }
     50% {
        opacity: 0;
     }
@@ -218,12 +225,19 @@ Animations
 }
 @keyframes fadeOut {
     from {
+       height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+@keyframes fadeOut {
+    from {
        opacity: 1;
     }
     to {
         opacity: 0;
         visibility: hidden;
-        margin-bottom: -330px;
     }
 }
 @keyframes pop {
