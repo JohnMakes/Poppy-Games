@@ -17,11 +17,18 @@ Fonts
 
 }
 /***
+Helpful Classes
+***/
+.ir {
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/***
 Base Styles
 ***/
 body {
     font-size: 16px;
-    font-family: 'helsinkiregular';
 }
 header {
     margin-top: 20px;
@@ -38,6 +45,7 @@ h1 {
     animation-fill-mode: both;
     animation-name: colorfadeIn;
     padding: 120px 0 90px;
+    font-family: 'helsinkiregular';
 }
 h1 span {
     display: table-cell;
@@ -77,6 +85,72 @@ p {
 }
 p.hover {
     transform: scale(1.1);
+}
+/***
+Main Styles
+***/
+main {text-align: center;}
+/***
+Wine Styles
+***/
+h2 {
+    margin: 0 auto;
+    width: 424px;
+    height: 214px;
+    background: url(wine-logo.png) no-repeat;
+}
+/***
+Card Styles
+***/
+.card-container {
+    display: inline-block;
+    margin: 0 4%;
+    perspective: 1000px;
+}
+.card-container.one:hover .card,
+.card-container.one.hover .card {
+    transform: rotateY(180deg);
+}
+.card-container.two:hover .card,
+.card-container.two.hover .card {
+    transform: rotateY(-180deg);
+}
+.card-container, .front, .back {
+    width: 2.5in;
+    height: 3.5in;
+}
+.card {
+    transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+}
+.front {
+    z-index: 2;
+	transform: rotateY(0deg);
+    border: 1px solid #666;
+    border-radius: 5px;
+    background: url(card-back.png);
+    background-size: contain;
+}
+.back {
+    border: 1px solid #666;
+    border-radius: 5px;
+	transform: rotateY(180deg);
+}
+.clean {
+    background: url(card-clean.png);
+    background-size: contain;
+}
+.posion {
+    background: url(card-posion.png);
+    background-size: contain;
 }
 /***
 Animations
