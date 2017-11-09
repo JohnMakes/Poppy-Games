@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Poppy Games</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css" />
+        <script src="parallax.js"></script>
+        <script>
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene);
+        </script>
+    </head>
+    <body id="scene">
+        <header data-depth="0.2">
+            <h1><span><strong>Pop</strong>py<br />Games</span></h1>
+            <img src="poppy1.svg" width="350" alt="Poppy Flower">
+        </header>
+        <main>
+            <section class="wine" data-depth="0.6">
+                <h2 class="ir">Wine</h2>
+                <p class="coming">Now on <a href="https://www.kickstarter.com/projects/poppy-games/wine-the-card-game" target="_blank">Kickstarter</a>!</p>
+                <div data-depth="1" class="card-container one" ontouchstart="this.classList.toggle('hover');">
+                    <div class="card">
+                        <div class="front">
+
+                        </div><!--front-->
+                        <div class="back clean">
+
+                        </div><!--back-->
+                    </div><!--card-->
+                </div><!--card-container-->
+                <div data-depth="1" class="card-container two" ontouchstart="this.classList.toggle('hover');">
+                    <div class="card">
+                        <div class="front">
+
+                        </div><!--front-->
+                        <div class="back posion">
+
+                        </div><!--back-->
+                    </div><!--card-->
+                </div><!--card-container-->
+            </section>
+            <section class="contact">
+                <p>Follow us on Twitter<br/><a target="_blank" href="https://twitter.com/PoppyGamesLLC">@PoppyGamesLLC</a><br><br> Find us on <a target="_blank" href="https://www.facebook.com/poppygamesllc">Facebook</a>. <br><br> <small><a href="mailto:info@poppy-games.com">info@poppy-games.com</a></small></p>
+            </section>
+        </main>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-83785209-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
